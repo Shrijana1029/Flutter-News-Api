@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:news_app/config/network/network_request.dart';
+import 'package:news_app/features/news/news_page.dart';
 import 'package:news_app/features/top_headlines/headlines_page.dart';
 
 void main() {
@@ -48,7 +49,7 @@ class _MyHomePageState extends State<MyHomePage> {
     // than having to individually change instances of widgets.
     return MaterialApp(
       title: 'Flutter Demo',
-      home: HeadlinePage(),
+      home: NewsPage(),
     );
   }
 }
