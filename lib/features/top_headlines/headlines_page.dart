@@ -53,7 +53,9 @@ class _HeadlinePageState extends State<HeadlinePage> {
                       onTap: (){
                         Navigator.push(context, MaterialPageRoute(builder: (context)=> NewsDetails(
                           result: result[index],
-                        )));
+                        )
+                        )
+                        );
                       },
                       child: Padding(
                         padding: const EdgeInsets.all(8.0),
