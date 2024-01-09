@@ -1,8 +1,13 @@
 import 'package:flutter/material.dart';
+import 'package:news_app/features/top_headlines/headline_model.dart';
 import 'package:news_app/features/top_headlines/headlines_page.dart';
+import 'package:news_app/features/top_headlines/news_card.dart';
+import 'package:news_app/features/top_headlines/news_datails.dart';
+
 
 class NewsPage extends StatefulWidget {
   const NewsPage({super.key});
+
 
   @override
   State<NewsPage> createState() => _NewsPageState();
@@ -38,8 +43,10 @@ class _NewsPageState extends State<NewsPage> with SingleTickerProviderStateMixin
 
         children: [
           HeadlinePage(),
-          Icon(Icons.directions_transit),
+          // NewsDetails(result: result)
+          // NewsCard(result: Articles),
           Icon(Icons.directions_bike),
+
 
 
         ],
